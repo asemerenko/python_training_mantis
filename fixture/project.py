@@ -41,3 +41,10 @@ class ProjectHelper:
             wd.find_element_by_name(select_param).click()
             Select(wd.find_element_by_name(select_param)).select_by_visible_text(select_value)
             wd.find_element_by_name(select_param).click()
+
+    def delete_project_by_index(self, name):
+        wd = self.app.wd
+        self.open__manage_projects_page()
+        wd.find_element_by_link_text(name).click()
+        wd.find_element_by_xpath("//input[@value='Delete Project']").click()
+        wd.find_element_by_xpath("//input[@value='Delete Project']").click()
