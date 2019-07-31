@@ -66,7 +66,7 @@ def start(request, config):
 
 
 @pytest.fixture(scope="session")
-def db(request):
+def db(request, config):
     dbfixture = DbFixture(host=config['db']['host'], name=config['db']['name'],
                           user=config['db']['user'], password=config['db']['password'])
 
