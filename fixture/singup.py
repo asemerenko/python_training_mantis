@@ -1,4 +1,5 @@
 import re
+import time
 
 
 class SignupHelper:
@@ -17,6 +18,7 @@ class SignupHelper:
         url = self.extract_confirmation_url(mail)
 
         wd.get(url)
+        time.sleep(5)
         wd.find_element_by_name("password").send_keys(password)
         wd.find_element_by_name("password_confirm").send_keys(password)
         wd.find_element_by_xpath("//input[@value='Update User']").click()
