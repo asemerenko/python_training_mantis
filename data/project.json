@@ -1,16 +1,16 @@
 [
   {
     "py/object": "model.project.Project",
-    "description": "descriptionlFpJ6T8b",
-    "name": "Project_nameIvsIE6",
+    "description": "description5JrEaH",
+    "name": "Project_nameD",
     "status": "obsolete",
-    "view_status": "public"
+    "view_status": "private"
   },
   {
     "py/object": "model.project.Project",
-    "description": "descriptionJ",
-    "name": "Project_namefYYXB0",
-    "status": "release",
-    "view_status": "public"
+    "description": "descriptionYlKGZWlgG64QujLQN3",
+    "name": "Project_nameWYwf",
+    "status": "development",
+    "view_status": "private"
   }
 ]
